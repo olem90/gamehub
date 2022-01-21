@@ -1,12 +1,13 @@
 body{
     margin: 0;
     padding: 0;
+    background: rgb(7, 7, 129);
 }
 
 header{
     width:100%;
     display: flex;
-    background-color: #333;
+    background-color: rgb(31, 28, 28);
     margin: auto;
 
 }
@@ -35,7 +36,23 @@ header{
     display: block;
     
 }
-
+.input-wrapper{
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width:300px;
+align-self: flex-end;
+margin-bottom:.3rem;
+background: #fff;
+padding:.2rem;
+border-radius: 3px;
+}
+input{
+    border:none;
+    outline: none;
+    margin: 0 0.5rem 0 0.5rem;
+    width:100%;
+}
 .navbar-links li:hover{
     font-size: 1.26rem;
 }
@@ -60,20 +77,15 @@ header{
 .logo{
     display: flex;
     max-height: 90px;
-    margin-left: 100px;
+    margin-left: 3rem;
+    margin-right: 1.5rem;
 }
-.search-bar{
-    border: 2px solid #000;
-    display: flex;
-}
-
-
-
 
 .top-sellers-section{
     max-width: 1000px;
     margin: auto;
-    background-color: aquamarine;
+    background-color: rgb(4, 51, 80);
+    border-radius: 3px;
 }
 
 .cover-box{
@@ -93,15 +105,32 @@ header{
     
 }
 .cover-images{
-    max-width:60px;
     padding: 7px;
     display: flex;
     max-width: 100%;
-    min-width: none; 
+}
+.deals-section{
+    max-width: 1000px;
+    margin: auto;
+    background-color:rgb(4, 51, 80);
+    max-height: 250px;
+    border-radius: 3px;
+}
+.deals-container{
+    max-width: 600px;
+    display: flex;
+    margin: auto;
+    width:100%;
+}
+.deals-container2{
+    max-width: 600px;
+    display: flex;
+    margin: auto;
+    width:100%;
 }
 .free-shipping{
-    background-color: rgb(24, 90, 4);
-    color:#fff;
+    background-color: rgb(189, 186, 186);
+    color:#000;
     height:30px;
     display: flex;
     justify-content: center;
@@ -117,15 +146,106 @@ header{
         display: flex;
         text-align: left;
         justify-content: center;
-       
+        color: rgb(5, 226, 5);
+        margin-bottom:0px ;
+        margin-top:5rem ;
+        background: rgb(4, 51, 80);
+        padding:1rem
     }
+    .deals-h1{
+        padding: 2rem;
+    }
+    .spiderman-container{
+        height: 100%;
+
+    }
+    .spiderman-image{
+        width: 200px;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 0px 10px 10px 0px;
+        
+        
+    }
+    .deals-section-2{
+        display: flex;
+        background:rgb(4, 51, 80);
+        justify-content: space-evenly;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .deals-images{
+        max-width: 120px;
+        padding:10px;
+        margin:0;
+        
+    }
+    .deals-text{
+        margin:auto;
+        font-size: 40px;
+        text-transform: uppercase;
+        padding: 5px;
+        margin: 0 4px;
+        color:red;
+    }
+       .two-cards{
+           display: flex;
+       }
+       .pre-order-images{
+           max-width: 110px;
+           padding: .3rem;
+           
+       }
+
+       
+
+      .pre-order-container{
+          display: flex;
+          max-width: 600px;
+          border: 2px solid hotpink;
+          height:400px;
+          margin-top: 5rem;
+          background:rgb(4, 51, 80); 
+      }
+      .sell-games-container{
+        display: flex;
+        max-width: 600px;
+        border: 2px solid hotpink;
+        height:400px;
+        margin-top: 5rem;
+        background:rgb(4, 51, 80); 
+      }
+      .sell-games-images{
+        max-width: 110px;
+        padding: .3rem;
+    }
+      
+      .pre-order-box{
+        display: flex;  
+        border:2px solid #fff;
+        display: flex;
+        max-height: 150px;
+        
+     
+      }
+
+      .pre-order-box-container{
+          display: flex;
+          border: 3px solid red;
+          max-height: 200px;
+          justify-content: center;
+          
+          margin: auto;
+
+
+      }
 
 @media (max-width:600px){
     .toggle-btn{
         display: flex;
     }
     .navbar-links{
-        /*display: none;*/
+        display: none;
     }
 .navbar{
     flex-direction: column;
