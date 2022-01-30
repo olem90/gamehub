@@ -112,34 +112,35 @@ body{
 .about-h2{
     background: #fff;
     color:#000;
-    padding:10px;
     font-size: 24px;
-    width:100%;
-    max-width: 300px;
-    text-align: left;
     font-family: 'roboto';
+    justify-content: left;
 }
 .bg-img{
     background-image: url(../images/Mini-deadpool.jpeg);
     object-fit: cover;
     height: 815px;
-    max-width: 900px;
+    max-width: 1200px;
     background-repeat: no-repeat;
     opacity: .6;
-    display: flex;
+    z-index: -1;
+    position: relative;
+
+}
+.about-page-wrapper{
+    max-width: 100%;
 }
 .about-wrapper{
     background: #fff;
-    max-width: 550px;
+    max-width: 500px;
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
-    margin: auto;
-    
-    top:120px;
-    left:750px;
+    top: 140px;
+    left:500px;
     justify-content: center;
-    flex-shrink: 1;
+    position: absolute;
+    z-index: 1;
+    margin-right: 200px;
 }
 .about-card{
     max-width: 500px;
@@ -154,7 +155,6 @@ body{
     max-width: 400px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 .about-p2{
     width:100%;
@@ -162,6 +162,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 
 .about-h1{
@@ -171,11 +172,37 @@ body{
     padding:10px;
     width:100%;
     max-width: 300px;
-}
-  footer{
+    }
+footer{
     margin-bottom: 0;
     display: flex;
-    position: absolute;
     bottom:0px;
     width:100%;
-}
+    }
+@media(max-width:1100px){
+.about-wrapper{
+    top: 140px;
+    left:250px;
+    }
+    }
+@media(max-width:800px){
+.about-wrapper{
+    top: 140px;
+    left:150px;
+    margin-right:50px;
+    }
+    }
+@media(max-width:550px){
+.about-wrapper{
+    top: 140px;
+    left:0px;
+    margin-inline:50px;
+    }
+    }
+@media(max-width:400px){
+.about-wrapper{
+    top: 140px;
+    left:150px;
+    margin-right:0px;
+    }
+    }

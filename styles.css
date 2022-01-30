@@ -54,7 +54,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 240px;
+    max-width: 200px;
     align-self: flex-end;
     margin-bottom:.3rem;
     background: #fff;
@@ -630,10 +630,4 @@ footer{
         .navbar-links{
             display: none;
         }
-        .input-wrapper input{
-            width:100%;
-            min-width: 230px;
         }
-        
-
-    }
